@@ -1,0 +1,1 @@
+import{w as a}from"./index.CtdS-rD2.js";const l=a(null),o=a(null),t="access_token";function n(){o.update(e=>localStorage.getItem(t))}function r(e){o.update(s=>e),e!=null?localStorage.setItem(t,e):localStorage.removeItem(t)}export{o as a,l as c,r as s,n as u};
