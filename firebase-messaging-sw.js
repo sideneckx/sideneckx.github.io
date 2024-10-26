@@ -21,7 +21,6 @@ const app = firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging()
 
 // if (isSupported) {
-
 const channel = new BroadcastChannel('notifications');
 messaging.onBackgroundMessage(function (payload) {
 	//can not console.log here
