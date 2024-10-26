@@ -20,14 +20,14 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging()
 
-if (isSupported) {
+// if (isSupported) {
 
-	const channel = new BroadcastChannel('notifications');
-	messaging.onBackgroundMessage(function (payload) {
-		//can not console.log here
-		channel.postMessage(payload);
-	});
-}
+const channel = new BroadcastChannel('notifications');
+messaging.onBackgroundMessage(function (payload) {
+	//can not console.log here
+	channel.postMessage(payload);
+});
+// }
 
 self.addEventListener('push', function (event) {
 	var notification = event.data.json();
