@@ -1,1 +1,0 @@
-import{w as a}from"./index.SGLwJ-a-.js";class t{static get accessToken(){return"access_token"}}const n=a(null),s=a(null);function l(){s.update(e=>localStorage.getItem(t.accessToken))}function r(e){s.update(c=>e),e!=null?localStorage.setItem(t.accessToken,e):localStorage.removeItem(t.accessToken)}export{t as L,s as a,n as c,r as s,l as u};
